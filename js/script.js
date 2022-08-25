@@ -15,15 +15,16 @@
 
 //2
 
-// function findShort(str) {
-//   str = str.split(" ");
-//   str.sort((a, b) => a.length - b.length);
-//   return str[0];
-// }
+function findShort(str) {
+  let arr=str.slice();
+  arr = arr.split(" ");
+  arr.sort((a, b) => a.length - b.length);
+  return arr[0];
+}
 
-// const sentance = "Lorem ipsum dolor sit amet";
+const sentance = "Lorem ipsum dolor sit amet";
 
-// console.log(findShort(sentance)); // sit
-// console.log(findShort("Hello world")); // Hello
-// console.log(findShort("Hi")); // Hi
-// console.log(findShort("She is David's sister")); // is
+console.log(findShort(sentance)); // sit
+console.log(findShort("Hello world")); // Hello
+console.log(findShort("Hi")); // Hi
+console.log(findShort("She is David's sister")); // is
